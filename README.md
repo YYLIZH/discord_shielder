@@ -10,7 +10,7 @@ This is a chrome extension to help you shield the specific words you don't like 
 
  2. click the extension, the window will be shown.
 
-!["this is the working window](readme/window.JPG) </br>
+!["this is the working window](discord_shielder/readme/window.JPG) </br>
 
  3. If you click on the "Show the prohibition list button", it window will show the curent hide list.
 
