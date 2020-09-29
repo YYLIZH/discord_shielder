@@ -1,0 +1,32 @@
+{
+    "manifest_version": 2,
+    "name": "Discord_眼不見為淨",
+    "description": "想在discord眼不見為淨嗎，遮擋掉你不喜歡的人或言論",
+    "version": "2.0",
+    "content_scripts": [{
+        "matches": [
+            "https://discord.com/*"
+        ],
+        "js": ["assets/js/lib/jquery-3.5.1.min.js", "assets/js/content.js"],
+        "css":["assets/css/popup.css"],
+        "run_at":"document_end"
+    }],
+    "background":{
+        "scripts":["assets/js/background.js"],
+        "persistent": true
+    },
+    "icons": {
+        "16": "assets/image/icon.png",
+        "48": "assets/image/icon.png",
+        "128": "assets/image/icon.png"
+    },
+    "browser_action": {
+        "default_icon": "assets/image/icon.png",
+        "default_popup": "assets/popup.html"
+    },
+    "permissions": [
+        "activeTab",
+        "tabs",
+        "storage"
+    ]
+}
